@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TimeOfDeath_MAUI.Views.ResultsView"
+             Title="Results"
+             IconImageSource="cross.png"
+             xmlns:viewmodel="clr-namespace:TimeOfDeath_MAUI.ViewModels"
+             xmlns:Converters="clr-namespace:TimeOfDeath_MAUI.Converters">
+    <ContentPage.BindingContext>
+        <viewmodel:ResultsViewModel x:Name="ViewModel" />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Converters:LanguageConverter x:Key="Languages" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <VerticalStackLayout VerticalOptions="Fill" HorizontalOptions="Fill" Padding="20">
+        <Grid RowDefinitions="auto,auto" RowSpacing="8" ColumnDefinitions="40*,auto">
+            <Label Text="{Binding Converter={StaticResource Languages},ConverterParameter=Results_Date}"
+                   Grid.Column="0" Grid.Row="0" />
+            <Label Text="{Binding DateDead}" Grid.Column="1" Grid.Row="0" />
+            <Label Text="{Binding Converter={StaticResource Languages},ConverterParameter=Results_OnBefore}"
+                   Grid.Column="0" Grid.Row="1" />
+            <Label Text="{Binding TimeDead}" Grid.Column="1" Grid.Row="1" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

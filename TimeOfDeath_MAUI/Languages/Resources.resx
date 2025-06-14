@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Basic_BodyWeight" xml:space="preserve">
+    <value>What is the weight of the body</value>
+  </data>
+  <data name="Basic_DateFound" xml:space="preserve">
+    <value>Enter the date the body was found</value>
+  </data>
+  <data name="Basic_TempFound" xml:space="preserve">
+    <value>What temperature was the body when found (deg C)</value>
+  </data>
+  <data name="Basic_TempSurrounds" xml:space="preserve">
+    <value>What is the temperature of the surrounds (deg C)</value>
+  </data>
+  <data name="Basic_TimeFound" xml:space="preserve">
+    <value>Time the body was found</value>
+  </data>
+  <data name="Cond_Move" xml:space="preserve">
+    <value>Moving</value>
+  </data>
+  <data name="Cond_Still" xml:space="preserve">
+    <value>Still</value>
+  </data>
+  <data name="Cond_Dry12Thick" xml:space="preserve">
+    <value>Dry with 1-2 thicker layers</value>
+  </data>
+  <data name="Cond_Dry12Thin" xml:space="preserve">
+    <value>Dry with 1-2 thin layers</value>
+  </data>
+  <data name="Cond_Dry23Thin" xml:space="preserve">
+    <value>Dry with 2-3 thin layers</value>
+  </data>
+  <data name="Cond_Dry34Thin" xml:space="preserve">
+    <value>Dry with 3-4 thin layers</value>
+  </data>
+  <data name="Cond_DryNaked" xml:space="preserve">
+    <value>Dry and naked</value>
+  </data>
+  <data name="Cond_Dry_More" xml:space="preserve">
+    <value>Dry with more thin or thicker layers</value>
+  </data>
+  <data name="Cond_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Cond_WaterPull" xml:space="preserve">
+    <value>Pulled from the water</value>
+  </data>
+  <data name="Cond_Wet2More" xml:space="preserve">
+    <value>Wet with 2 or more thicker wet layers</value>
+  </data>
+  <data name="Cond_Wet2Thick" xml:space="preserve">
+    <value>Wet with 2 thicker wet layers</value>
+  </data>
+  <data name="Cond_Wet12Thin" xml:space="preserve">
+    <value>Wet with 1-2 thin wet layers</value>
+  </data>
+  <data name="Cond_WetNaked" xml:space="preserve">
+    <value>Wet and naked</value>
+  </data>
+  <data name="Error_CalcTitle" xml:space="preserve">
+    <value>Calculator error</value>
+  </data>
+  <data name="Error_CalcTempNull" xml:space="preserve">
+    <value>Temperature of surrounds is null</value>
+  </data>
+  <data name="Error_TempBodyNull" xml:space="preserve">
+    <value>Temperature of the body is null</value>
+  </data>
+  <data name="Gen_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Gen_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Error_TempDifference" xml:space="preserve">
+    <value>The body temperature has to be higher than the surrounds</value>
+  </data>
+  <data name="Error_BodyWeight" xml:space="preserve">
+    <value>The body has to have some weight</value>
+  </data>
+  <data name="Results_OnBefore" xml:space="preserve">
+    <value>Death occured on or before </value>
+  </data>
+  <data name="Results_Date" xml:space="preserve">
+    <value>Date of death</value>
+  </data>
+  <data name="Tabs_Basic" xml:space="preserve">
+    <value>Basic info</value>
+  </data>
+  <data name="Tabs_Conditions" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="Tabs_Results" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="Cond_CalcButton" xml:space="preserve">
+    <value>Calculate time of death</value>
+  </data>
+  <data name="Cond_Found" xml:space="preserve">
+    <value>When found, the body was</value>
+  </data>
+  <data name="Cond_FoundAir" xml:space="preserve">
+    <value>If found in air, the air was</value>
+  </data>
+  <data name="Cond_FoundWater" xml:space="preserve">
+    <value>If found in water, it was</value>
+  </data>
+  <data name="Cond_FoundPulled" xml:space="preserve">
+    <value>If pulled from water, the air was</value>
+  </data>
+</root>

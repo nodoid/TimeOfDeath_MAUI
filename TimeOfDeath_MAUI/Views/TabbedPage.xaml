@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TimeOfDeath_MAUI.Views;assembly=TimeOfDeath_MAUI"
+             xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             x:Class="TimeOfDeath_MAUI.Views.TabbedPage"
+            x:Name="tabpage">
+    <NavigationPage Title="Basic Info" IconImageSource="clock.png">
+        <x:Arguments>
+            <local:BasicDetailsView Title="Basic Info" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Conditions" IconImageSource="weather.png">
+        <x:Arguments>
+            <local:ConditionsView Title="Conditions" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Results" IconImageSource="cross.png" x:Name="results" IsEnabled="False">
+        <x:Arguments>
+            <local:ResultsView Title="Results" />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

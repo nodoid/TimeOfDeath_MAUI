@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TimeOfDeath_MAUI.Views.BasicDetailsView"
+             Title="Basic Details"
+             IconImageSource="clock.png"
+             xmlns:viewmodel="clr-namespace:TimeOfDeath_MAUI.ViewModels"
+             xmlns:Converters="clr-namespace:TimeOfDeath_MAUI.Converters">
+    <ContentPage.BindingContext>
+        <viewmodel:BasicInfoViewModel x:Name="ViewModel" />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Converters:LanguageConverter x:Key="Languages" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <VerticalStackLayout VerticalOptions="Fill" HorizontalOptions="Fill" Padding="20">
+        <Grid ColumnDefinitions="40*,60*" ColumnSpacing="8" RowDefinitions="auto,auto,auto,auto,auto,auto" RowSpacing="8">
+            <Label 
+                Text="{Binding Converter={StaticResource Languages},ConverterParameter=Basic_DateFound}" 
+                Grid.Column="0" Grid.Row="0" />
+            <DatePicker HorizontalOptions="Center" DateSelected="DatePicker_OnDateSelected" Grid.Column="1" Grid.Row="0"
+                        Date="{Binding Death}" MaximumDate="{Binding MaxDate}"/>
+            <Label Text="{Binding Converter={StaticResource Languages},ConverterParameter=Basic_TimeFound}"
+                   Grid.Column="0" Grid.Row="1"/>
+            <TimePicker Time="{Binding TimeOfDeath}" TimeSelected="TimePicker_OnTimeSelected"
+                        Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+            <Label Text="{Binding Converter={StaticResource Languages},ConverterParameter=Basic_TempFound}"
+                   Grid.Column="0" Grid.Row="2" />
+            <Entry Text="{Binding BodyTemp}" Keyboard="Numeric" 
+                   HorizontalOptions="Fill" Grid.Column="1" Grid.Row="2" />
+            <Label Text="{Binding Converter={StaticResource Languages},ConverterParameter=Basic_TempSurrounds}"
+                   Grid.Row="3" Grid.Column="0" />
+            <Entry Text="{Binding SurroundTemp}" Keyboard="Numeric" 
+                   HorizontalOptions="Fill" Grid.Column="1" Grid.Row="3" />
+            <Label Text="{Binding Converter={StaticResource Languages},ConverterParameter=Basic_BodyWeight}"
+                   Grid.Row="4" Grid.Column="0" />
+            <Grid ColumnDefinitions="75*,auto" Grid.Column="1" Grid.Row="4">
+                <Entry Text="{Binding BodyWgt}" Keyboard="Numeric" 
+                  Grid.Column="0" TextChanged="InputView_OnTextChanged"/>
+                <Picker ItemsSource="{Binding Units}" 
+                        SelectedIndex="{Binding IsImperial}" 
+                        SelectedIndexChanged="Picker_OnSelectedIndexChanged" Grid.Column="1" />
+            </Grid>
+            
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

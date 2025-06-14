@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using Mopups.Hosting;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace TimeOfDeath_MAUI
 {
@@ -9,6 +11,8 @@ namespace TimeOfDeath_MAUI
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .ConfigureMopups()
+                .UseSkiaSharp()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
